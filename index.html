@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hands by Haylee - Luxury nail salon in Fresno, CA. Custom nail art, pre-made designs, and premium nail services. Book your appointment today!">
+    <meta name="keywords" content="nail salon, Fresno CA, luxury nails, custom nail art, gel nails, acrylic nails">
+    <title>Hands by Haylee | Luxury Nail Salon - Fresno, CA</title>
+
+    <!-- Preconnect to external resources for performance -->
+    <link rel="preconnect" href="https://placehold.co">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts - Preloaded for performance -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#hero" class="skip-link">Skip to main content</a>
+    <!--
+    ============================================
+    NAVIGATION - Sticky/Fixed Header
+    ============================================
+    Purpose: Quick navigation to all sections + prominent CTA
+    JS Note: Add smooth scrolling behavior to nav links
+    CSS Note: Make sticky on scroll, subtle shadow on scroll
+    -->
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1 class="logo-text">Hands by Haylee</h1>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="hamburger-icon"></span>
+            </button>
+            <div class="mobile-menu-overlay" aria-hidden="true"></div>
+            <ul class="nav-menu">
+                <li><a href="#services" data-scroll-target="services">Nail Lengths</a></li>
+                <li><a href="#tiers" data-scroll-target="tiers">Design Tiers</a></li>
+                <li><a href="#designs" data-scroll-target="designs">Designs</a></li>
+                <li><a href="#booking-options" data-scroll-target="booking-options">Book</a></li>
+                <li><a href="#contact" data-scroll-target="contact">Contact</a></li>
+                <li class="nav-cta">
+                    <a href="#booking-options" class="btn btn-primary" data-scroll-target="booking-options">Book Appointment</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--
+    ============================================
+    MAIN CONTENT
+    ============================================
+    -->
+    <main>
+        <!--
+        ============================================
+        HERO SECTION
+        ============================================
+        Purpose: First impression, brand identity, main CTA
+        CSS Note: Add leopard print background, gradient overlay
+        JS Note: Add subtle parallax or fade-in animation on load
+        -->
+        <header class="hero-section" id="hero">
+            <div class="hero-background">
+                <!-- CSS will add leopard print pattern here -->
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">Hands by Haylee</h1>
+                <p class="hero-tagline">Luxury Nail Artistry in Fresno, California</p>
+                <p class="hero-subtitle">Where Your Nails Become Art</p>
+                <div class="hero-cta-group">
+                    <a href="#booking-options" class="btn btn-primary btn-large" data-scroll-target="booking-options">
+                        Book Your Appointment
+                    </a>
+                    <a href="#services" class="btn btn-secondary btn-large" data-scroll-target="services">
+                        Explore Services
+                    </a>
+                </div>
+            </div>
+            <!-- Scroll indicator for visual cue -->
+            <div class="scroll-indicator" aria-hidden="true">
+                <span class="scroll-text">Scroll to Explore</span>
+                <span class="scroll-arrow">↓</span>
+            </div>
+        </header>
+
+        <!--
+        ============================================
+        SERVICES SECTION - Nail Lengths
+        ============================================
+        Purpose: Show all available nail length options
+        CSS Note: Card grid (mobile: 1 col, tablet: 2 col, desktop: 3-5 col)
+        JS Note: Add hover effects, click to select length (store in session)
+        -->
+        <section class="services-section section-padding" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Choose Your Length</h2>
+                    <p class="section-subtitle">Select the perfect nail length to match your style and lifestyle</p>
+                </div>
+
+                <div class="service-grid">
+                    <!-- Extra Short -->
+                    <article class="service-card" data-length="extra-short">
+                        <div class="service-image-wrapper">
+                            <img src="https://placehold.co/300x300/ffb3d9/ffffff?text=Extra+Short"
+                                 alt="Extra short nail length example"
+                                 class="service-image"
+                                 loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Extra Short</h3>
+                            <p class="service-description">Perfect for active lifestyles. Clean, practical, and chic.</p>
+                            <!-- EDITABLE PRICE - Easy to update -->
+                            <p class="service-price editable-price" data-price="0">
+                                <span class="price-label">Starting at</span>
+                                <span class="price-amount">$0</span>
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Short -->
+                    <article class="service-card" data-length="short">
+                        <div class="service-image-wrapper">
+                            <img src="https://placehold.co/300x300/ff99cc/ffffff?text=Short"
+                                 alt="Short nail length example"
+                                 class="service-image"
+                                 loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Short</h3>
+                            <p class="service-description">Elegant and versatile. Ideal for everyday wear with subtle style.</p>
+                            <!-- EDITABLE PRICE -->
+                            <p class="service-price editable-price" data-price="0">
+                                <span class="price-label">Starting at</span>
+                                <span class="price-amount">$0</span>
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Schmedium -->
+                    <article class="service-card featured-service" data-length="schmedium">
+                        <div class="featured-badge">Most Popular</div>
+                        <div class="service-image-wrapper">
+                            <img src="https://placehold.co/300x300/ff80bf/ffffff?text=Schmedium"
+                                 alt="Schmedium nail length example - most popular"
+                                 class="service-image"
+                                 loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Schmedium</h3>
+                            <p class="service-description">The perfect balance. Not too short, not too long - just right!</p>
+                            <!-- EDITABLE PRICE -->
+                            <p class="service-price editable-price" data-price="0">
+                                <span class="price-label">Starting at</span>
+                                <span class="price-amount">$0</span>
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Medium -->
+                    <article class="service-card" data-length="medium">
+                        <div class="service-image-wrapper">
+                            <img src="https://placehold.co/300x300/ff66b2/ffffff?text=Medium"
+                                 alt="Medium nail length example"
+                                 class="service-image"
+                                 loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Medium</h3>
+                            <p class="service-description">Statement-making length. Perfect canvas for detailed nail art.</p>
+                            <!-- EDITABLE PRICE -->
+                            <p class="service-price editable-price" data-price="0">
+                                <span class="price-label">Starting at</span>
+                                <span class="price-amount">$0</span>
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Long -->
+                    <article class="service-card" data-length="long">
+                        <div class="service-image-wrapper">
+                            <img src="https://placehold.co/300x300/ff4da6/ffffff?text=Long"
+                                 alt="Long nail length example"
+                                 class="service-image"
+                                 loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Long</h3>
+                            <p class="service-description">Bold and glamorous. Maximum drama and luxury appeal.</p>
+                            <!-- EDITABLE PRICE -->
+                            <p class="service-price editable-price" data-price="0">
+                                <span class="price-label">Starting at</span>
+                                <span class="price-amount">$0</span>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="section-cta">
+                    <a href="#tiers" class="btn btn-secondary" data-scroll-target="tiers">
+                        Next: Choose Your Design Tier
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--
+        ============================================
+        DESIGN TIERS SECTION
+        ============================================
+        Purpose: Tier-based pricing for nail art complexity
+        CSS Note: Cards with progressive visual treatment (Tier 4 most luxurious)
+        JS Note: Click to select tier, show examples modal
+        -->
+        <section class="tiers-section section-padding alt-background" id="tiers">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Select Your Nail Art Tier</h2>
+                    <p class="section-subtitle">From simple elegance to intricate masterpieces - choose the artistry level that speaks to you</p>
+                </div>
+
+                <div class="tier-grid">
+                    <!-- Tier 1 - Simple -->
+                    <article class="tier-card" data-tier="1">
+                        <div class="tier-image-wrapper">
+                            <img src="https://placehold.co/350x350/ffe6f0/ff1a8c?text=Tier+1"
+                                 alt="Tier 1 nail art - simple designs"
+                                 class="tier-image"
+                                 loading="lazy">
+                        </div>
+                        <div class="tier-content">
+                            <span class="tier-badge">Tier 1</span>
+                            <h3 class="tier-title">Simple Elegance</h3>
+                            <p class="tier-description">Solid colors, basic French tips, simple gradients. Clean, timeless, and effortlessly beautiful.</p>
+                            <ul class="tier-features">
+                                <li>1-2 colors</li>
+                                <li>Basic designs</li>
+                                <li>No 3D elements</li>
+                                <li>Perfect for minimalists</li>
+                            </ul>
+                            <!-- EDITABLE PRICE -->
+                            <p class="tier-price editable-price" data-tier-price="1">
+                                <span class="price-amount">$0</span>
+                            </p>
+                            <button class="btn btn-outline" data-tier-select="1">Select Tier 1</button>
+                        </div>
+                    </article>
+
+                    <!-- Tier 2 - Moderate -->
+                    <article class="tier-card" data-tier="2">
+                        <div class="tier-image-wrapper">
+                            <img src="https://placehold.co/350x350/ffcce0/ff0080?text=Tier+2"
+                                 alt="Tier 2 nail art - moderate designs"
+                                 class="tier-image"
+                                 loading="lazy">
+                        </div>
+                        <div class="tier-content">
+                            <span class="tier-badge">Tier 2</span>
+                            <h3 class="tier-title">Detailed Artistry</h3>
+                            <p class="tier-description">Multi-color designs, simple patterns, basic nail art. A step up in creativity and personal expression.</p>
+                            <ul class="tier-features">
+                                <li>3-4 colors</li>
+                                <li>Patterns & designs</li>
+                                <li>Basic rhinestones</li>
+                                <li>Hand-painted details</li>
+                            </ul>
+                            <!-- EDITABLE PRICE -->
+                            <p class="tier-price editable-price" data-tier-price="2">
+                                <span class="price-amount">$0</span>
+                            </p>
+                            <button class="btn btn-outline" data-tier-select="2">Select Tier 2</button>
+                        </div>
+                    </article>
+
+                    <!-- Tier 3 - Complex -->
+                    <article class="tier-card featured-tier" data-tier="3">
+                        <div class="featured-badge">Best Value</div>
+                        <div class="tier-image-wrapper">
+                            <img src="https://placehold.co/350x350/ffb3d9/e6005c?text=Tier+3"
+                                 alt="Tier 3 nail art - complex designs"
+                                 class="tier-image"
+                                 loading="lazy">
+                        </div>
+                        <div class="tier-content">
+                            <span class="tier-badge">Tier 3</span>
+                            <h3 class="tier-title">Intricate Designs</h3>
+                            <p class="tier-description">Complex patterns, multiple techniques, detailed artwork. Where artistry meets sophistication.</p>
+                            <ul class="tier-features">
+                                <li>5+ colors</li>
+                                <li>Intricate patterns</li>
+                                <li>Premium embellishments</li>
+                                <li>Mixed techniques</li>
+                            </ul>
+                            <!-- EDITABLE PRICE -->
+                            <p class="tier-price editable-price" data-tier-price="3">
+                                <span class="price-amount">$0</span>
+                            </p>
+                            <button class="btn btn-outline" data-tier-select="3">Select Tier 3</button>
+                        </div>
+                    </article>
+
+                    <!-- Tier 4 - Luxury -->
+                    <article class="tier-card luxury-tier" data-tier="4">
+                        <div class="featured-badge luxury-badge">Ultimate Luxury</div>
+                        <div class="tier-image-wrapper">
+                            <img src="https://placehold.co/350x350/ff99cc/cc0052?text=Tier+4"
+                                 alt="Tier 4 nail art - luxury masterpiece designs"
+                                 class="tier-image"
+                                 loading="lazy">
+                        </div>
+                        <div class="tier-content">
+                            <span class="tier-badge luxury">Tier 4</span>
+                            <h3 class="tier-title">Masterpiece Collection</h3>
+                            <p class="tier-description">3D art, premium charms, crystal work, custom hand-painted masterpieces. The ultimate luxury nail experience.</p>
+                            <ul class="tier-features">
+                                <li>Unlimited colors</li>
+                                <li>3D elements & charms</li>
+                                <li>Swarovski crystals</li>
+                                <li>Custom artwork</li>
+                                <li>Premium finishing</li>
+                            </ul>
+                            <!-- EDITABLE PRICE -->
+                            <p class="tier-price editable-price" data-tier-price="4">
+                                <span class="price-amount">$0</span>
+                            </p>
+                            <button class="btn btn-outline luxury-btn" data-tier-select="4">Select Tier 4</button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="section-cta">
+                    <a href="#designs" class="btn btn-secondary" data-scroll-target="designs">
+                        Next: Browse Designs
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--
+        ============================================
+        DESIGN CHOICE SECTION
+        ============================================
+        Purpose: Let clients choose pre-made gallery or custom request
+        CSS Note: Two-column layout on desktop, stacked on mobile
+        JS Note: Gallery modal for enlarged images, custom request form toggle
+        -->
+        <section class="design-choice-section section-padding" id="designs">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Pre-Made Designs or Custom Request?</h2>
+                    <p class="section-subtitle">Choose from our curated gallery or bring your unique vision to life</p>
+                </div>
+
+                <div class="design-options-wrapper">
+                    <!-- Option 1: Pre-Made Designs -->
+                    <div class="design-option pre-made-option">
+                        <div class="option-header">
+                            <h3 class="option-title">Pre-Made Designs</h3>
+                            <p class="option-description">Browse our gallery of ready-to-wear nail art. Book and wear same-day!</p>
+                        </div>
+
+                        <!-- Gallery Grid -->
+                        <div class="design-gallery" role="region" aria-label="Pre-made nail design gallery">
+                            <div class="gallery-item" data-gallery-item>
+                                <img src="https://placehold.co/250x250/ffb3d9/ffffff?text=Design+1"
+                                     alt="Pre-made nail design 1"
+                                     class="gallery-image"
+                                     loading="lazy">
+                                <div class="gallery-overlay">
+                                    <button class="btn-view-details" data-modal-trigger="gallery-1">View Details</button>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item" data-gallery-item>
+                                <img src="https://placehold.co/250x250/ff99cc/ffffff?text=Design+2"
+                                     alt="Pre-made nail design 2"
+                                     class="gallery-image"
+                                     loading="lazy">
+                                <div class="gallery-overlay">
+                                    <button class="btn-view-details" data-modal-trigger="gallery-2">View Details</button>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item" data-gallery-item>
+                                <img src="https://placehold.co/250x250/ff80bf/ffffff?text=Design+3"
+                                     alt="Pre-made nail design 3"
+                                     class="gallery-image"
+                                     loading="lazy">
+                                <div class="gallery-overlay">
+                                    <button class="btn-view-details" data-modal-trigger="gallery-3">View Details</button>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item" data-gallery-item>
+                                <img src="https://placehold.co/250x250/ff66b2/ffffff?text=Design+4"
+                                     alt="Pre-made nail design 4"
+                                     class="gallery-image"
+                                     loading="lazy">
+                                <div class="gallery-overlay">
+                                    <button class="btn-view-details" data-modal-trigger="gallery-4">View Details</button>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item" data-gallery-item>
+                                <img src="https://placehold.co/250x250/ff4da6/ffffff?text=Design+5"
+                                     alt="Pre-made nail design 5"
+                                     class="gallery-image"
+                                     loading="lazy">
+                                <div class="gallery-overlay">
+                                    <button class="btn-view-details" data-modal-trigger="gallery-5">View Details</button>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item" data-gallery-item>
+                                <img src="https://placehold.co/250x250/ff3399/ffffff?text=Design+6"
+                                     alt="Pre-made nail design 6"
+                                     class="gallery-image"
+                                     loading="lazy">
+                                <div class="gallery-overlay">
+                                    <button class="btn-view-details" data-modal-trigger="gallery-6">View Details</button>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item" data-gallery-item>
+                                <img src="https://placehold.co/250x250/ff1a8c/ffffff?text=Design+7"
+                                     alt="Pre-made nail design 7"
+                                     class="gallery-image"
+                                     loading="lazy">
+                                <div class="gallery-overlay">
+                                    <button class="btn-view-details" data-modal-trigger="gallery-7">View Details</button>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item" data-gallery-item>
+                                <img src="https://placehold.co/250x250/ff0080/ffffff?text=Design+8"
+                                     alt="Pre-made nail design 8"
+                                     class="gallery-image"
+                                     loading="lazy">
+                                <div class="gallery-overlay">
+                                    <button class="btn-view-details" data-modal-trigger="gallery-8">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="option-cta">
+                            <a href="#booking-options" class="btn btn-primary" data-scroll-target="booking-options">
+                                Select Pre-Made Design
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Option 2: Custom Design -->
+                    <div class="design-option custom-option">
+                        <div class="option-header">
+                            <h3 class="option-title">Custom Design Request</h3>
+                            <p class="option-description">Have a vision? Let's bring your dream nails to life! Share your inspiration and I'll create a custom design just for you.</p>
+                        </div>
+
+                        <div class="custom-benefits">
+                            <div class="benefit-item">
+                                <span class="benefit-icon" aria-hidden="true">✨</span>
+                                <span class="benefit-text">100% unique to you</span>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon" aria-hidden="true">💅</span>
+                                <span class="benefit-text">Personalized consultation</span>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon" aria-hidden="true">🎨</span>
+                                <span class="benefit-text">Professional design mockup</span>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon" aria-hidden="true">💎</span>
+                                <span class="benefit-text">Premium materials</span>
+                            </div>
+                        </div>
+
+                        <div class="custom-placeholder-image">
+                            <img src="https://placehold.co/400x300/ffe6f0/ff1a8c?text=Your+Custom+Design"
+                                 alt="Custom nail design concept"
+                                 class="custom-image"
+                                 loading="lazy">
+                        </div>
+
+                        <div class="option-cta">
+                            <a href="#booking-options" class="btn btn-primary" data-scroll-target="booking-options">
+                                Request Custom Design
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--
+        ============================================
+        BOOKING OPTIONS SECTION
+        ============================================
+        Purpose: In-person vs. shipped pre-made sets
+        CSS Note: Two equal cards side-by-side (desktop), stacked (mobile)
+        JS Note: Clicking triggers appropriate booking flow/form
+        -->
+        <section class="booking-options-section section-padding alt-background" id="booking-options">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">How Would You Like Your Nails?</h2>
+                    <p class="section-subtitle">Choose your preferred experience</p>
+                </div>
+
+                <div class="booking-options-grid">
+                    <!-- In-Person Appointment -->
+                    <article class="booking-option-card">
+                        <div class="booking-icon" aria-hidden="true">
+                            <img src="https://placehold.co/100x100/ff99cc/ffffff?text=📍"
+                                 alt=""
+                                 class="icon-image"
+                                 loading="lazy">
+                        </div>
+                        <h3 class="booking-option-title">In-Person Appointment</h3>
+                        <p class="booking-option-description">Visit our luxury studio in Fresno, CA for a personalized nail experience. Relax, unwind, and leave with stunning nails.</p>
+
+                        <ul class="booking-features">
+                            <li>Professional application</li>
+                            <li>Luxury studio experience</li>
+                            <li>Same-day service available</li>
+                            <li>Custom consultations</li>
+                            <li>Perfect fit guaranteed</li>
+                        </ul>
+
+                        <div class="booking-location-info">
+                            <p class="location-text">
+                                <strong>Studio Location:</strong><br>
+                                Fresno, California<br>
+                                <em>(Full address provided upon booking)</em>
+                            </p>
+                        </div>
+
+                        <!-- JS Note: This should open booking modal/form -->
+                        <button class="btn btn-primary btn-large" data-booking-type="in-person" data-modal-trigger="booking-form">
+                            Book In-Person Appointment
+                        </button>
+                    </article>
+
+                    <!-- Shipped Pre-Made Sets -->
+                    <article class="booking-option-card">
+                        <div class="booking-icon" aria-hidden="true">
+                            <img src="https://placehold.co/100x100/ff66b2/ffffff?text=📦"
+                                 alt=""
+                                 class="icon-image"
+                                 loading="lazy">
+                        </div>
+                        <h3 class="booking-option-title">Shipped Pre-Made Sets</h3>
+                        <p class="booking-option-description">Can't visit in person? Order custom-fit press-on nail sets shipped directly to your door. Professional quality, DIY application.</p>
+
+                        <ul class="booking-features">
+                            <li>Custom-sized to your nails</li>
+                            <li>Professional quality</li>
+                            <li>Ships within 5-7 business days</li>
+                            <li>Reusable sets</li>
+                            <li>Application kit included</li>
+                        </ul>
+
+                        <div class="booking-location-info">
+                            <p class="location-text">
+                                <strong>Shipping:</strong><br>
+                                US-wide shipping available<br>
+                                <em>International inquiries welcome</em>
+                            </p>
+                        </div>
+
+                        <!-- JS Note: This should open shop/order form -->
+                        <button class="btn btn-primary btn-large" data-booking-type="shipped" data-modal-trigger="shop-form">
+                            Order Shipped Sets
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!--
+        ============================================
+        ABOUT / CONTACT SECTION
+        ============================================
+        Purpose: Business info, trust signals, contact details
+        CSS Note: Split layout or centered content with contact cards
+        JS Note: Click-to-call, click-to-email functionality
+        -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <!-- About Column -->
+                    <div class="about-column">
+                        <h2 class="section-title">About Hands by Haylee</h2>
+                        <div class="about-content">
+                            <p class="about-text">
+                                Welcome to Hands by Haylee, where luxury meets artistry. Based in beautiful Fresno, California,
+                                I specialize in creating stunning, custom nail designs that reflect your unique personality and style.
+                            </p>
+                            <p class="about-text">
+                                With a passion for precision and an eye for detail, every set of nails is treated as a canvas for
+                                wearable art. Whether you prefer minimalist elegance or bold, intricate masterpieces, I'm here to
+                                bring your nail dreams to life.
+                            </p>
+                            <p class="about-text">
+                                Thank you for choosing Hands by Haylee - where your nails become art.
+                            </p>
+                        </div>
+
+                        <!-- Trust Signals / Badges -->
+                        <div class="trust-signals">
+                            <div class="trust-item">
+                                <span class="trust-icon" aria-hidden="true">✓</span>
+                                <span class="trust-text">Licensed & Certified</span>
+                            </div>
+                            <div class="trust-item">
+                                <span class="trust-icon" aria-hidden="true">✓</span>
+                                <span class="trust-text">Premium Products</span>
+                            </div>
+                            <div class="trust-item">
+                                <span class="trust-icon" aria-hidden="true">✓</span>
+                                <span class="trust-text">100+ Happy Clients</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info Column -->
+                    <div class="contact-column">
+                        <h2 class="section-title">Get In Touch</h2>
+
+                        <!--
+                        ============================================
+                        EDITABLE CONTACT INFORMATION
+                        ============================================
+                        Owner: Update these placeholders with real info
+                        -->
+                        <div class="contact-info-grid">
+                            <!-- Location -->
+                            <div class="contact-info-item">
+                                <div class="contact-icon" aria-hidden="true">📍</div>
+                                <div class="contact-details">
+                                    <h3 class="contact-label">Location</h3>
+                                    <!-- EDITABLE: Update with full address -->
+                                    <p class="contact-value editable-contact" data-contact-type="address">
+                                        Fresno, California<br>
+                                        <em>Full address provided upon booking</em>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="contact-info-item">
+                                <div class="contact-icon" aria-hidden="true">📞</div>
+                                <div class="contact-details">
+                                    <h3 class="contact-label">Phone</h3>
+                                    <!-- EDITABLE: Update with real phone number -->
+                                    <p class="contact-value editable-contact" data-contact-type="phone">
+                                        <a href="tel:+15550000000" class="contact-link">(555) 000-0000</a>
+                                    </p>
+                                    <p class="contact-note">Click to call</p>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="contact-info-item">
+                                <div class="contact-icon" aria-hidden="true">✉️</div>
+                                <div class="contact-details">
+                                    <h3 class="contact-label">Email</h3>
+                                    <!-- EDITABLE: Update with real email -->
+                                    <p class="contact-value editable-contact" data-contact-type="email">
+                                        <a href="mailto:contact@handsbyhaylee.com" class="contact-link">contact@handsbyhaylee.com</a>
+                                    </p>
+                                    <p class="contact-note">We reply within 24 hours</p>
+                                </div>
+                            </div>
+
+                            <!-- Instagram -->
+                            <div class="contact-info-item">
+                                <div class="contact-icon" aria-hidden="true">📷</div>
+                                <div class="contact-details">
+                                    <h3 class="contact-label">Instagram</h3>
+                                    <!-- EDITABLE: Update with real Instagram handle -->
+                                    <p class="contact-value editable-contact" data-contact-type="instagram">
+                                        <a href="https://instagram.com/handsbyhaylee" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                            @handsbyhaylee
+                                        </a>
+                                    </p>
+                                    <p class="contact-note">Follow for daily inspiration</p>
+                                </div>
+                            </div>
+
+                            <!-- Business Hours -->
+                            <div class="contact-info-item full-width">
+                                <div class="contact-icon" aria-hidden="true">🕒</div>
+                                <div class="contact-details">
+                                    <h3 class="contact-label">Business Hours</h3>
+                                    <!-- EDITABLE: Update with real business hours -->
+                                    <div class="hours-list editable-contact" data-contact-type="hours">
+                                        <p><strong>Monday - Friday:</strong> 9:00 AM - 7:00 PM</p>
+                                        <p><strong>Saturday:</strong> 10:00 AM - 6:00 PM</p>
+                                        <p><strong>Sunday:</strong> By Appointment Only</p>
+                                        <p class="hours-note"><em>Hours subject to change. Please book in advance.</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Final CTA -->
+                        <div class="contact-cta">
+                            <a href="#booking-options" class="btn btn-primary btn-large" data-scroll-target="booking-options">
+                                Book Your Appointment Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--
+    ============================================
+    FOOTER
+    ============================================
+    Purpose: Copyright, social links, legal
+    CSS Note: Subtle background, centered content
+    -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <p class="footer-logo">Hands by Haylee</p>
+                    <p class="footer-tagline">Luxury Nail Artistry | Fresno, CA</p>
+                </div>
+
+                <div class="footer-social">
+                    <h3 class="footer-heading">Follow Us</h3>
+                    <div class="social-links">
+                        <!-- EDITABLE: Update social media links -->
+                        <a href="https://instagram.com/handsbyhaylee" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <span class="social-icon">📷</span>
+                        </a>
+                        <a href="https://facebook.com/handsbyhaylee" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                            <span class="social-icon">📘</span>
+                        </a>
+                        <a href="https://tiktok.com/@handsbyhaylee" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok">
+                            <span class="social-icon">🎵</span>
+                        </a>
+                        <a href="https://pinterest.com/handsbyhaylee" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Pinterest">
+                            <span class="social-icon">📌</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-legal">
+                    <p class="copyright">
+                        &copy; 2026 Hands by Haylee. All rights reserved.
+                    </p>
+                    <div class="legal-links">
+                        <a href="#privacy" class="legal-link">Privacy Policy</a>
+                        <span class="separator">|</span>
+                        <a href="#terms" class="legal-link">Terms of Service</a>
+                        <span class="separator">|</span>
+                        <a href="#cancellation" class="legal-link">Cancellation Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--
+    ============================================
+    JAVASCRIPT INTEGRATION NOTES
+    ============================================
+
+    JS Agent: Add the following functionality:
+
+    1. SMOOTH SCROLLING
+       - Target all [data-scroll-target] links
+       - Smooth scroll to section IDs
+       - Account for fixed header height offset
+
+    2. MOBILE MENU
+       - Toggle .mobile-menu-toggle
+       - Show/hide .nav-menu on mobile
+       - Close menu when link clicked
+       - Add/remove body scroll lock
+
+    3. STICKY NAVIGATION
+       - Add .scrolled class to nav on scroll
+       - Change background opacity/shadow
+       - Smooth transition
+
+    4. GALLERY MODAL
+       - Click gallery items to open modal
+       - Show enlarged image + details
+       - Prev/Next navigation
+       - Close on overlay click or ESC key
+
+    5. BOOKING FORMS
+       - Modal forms for in-person and shipped options
+       - Form validation
+       - Date/time picker integration
+       - Form submission handling
+       - Success/error messaging
+
+    6. SELECTION TRACKING
+       - Store selected length, tier, design choice in sessionStorage
+       - Visual feedback on selection
+       - Pre-populate booking form with selections
+
+    7. ANIMATIONS
+       - Fade-in on scroll for sections
+       - Hover effects on cards
+       - Button ripple effects
+       - Parallax on hero background (subtle)
+
+    8. ACCESSIBILITY
+       - Keyboard navigation
+       - Focus management in modals
+       - Announce dynamic content to screen readers
+       - Skip to content link
+
+    -->
+
+    <!-- JavaScript - Main Application -->
+    <script src="script.js"></script>
+
+</body>
+</html>
