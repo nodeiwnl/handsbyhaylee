@@ -3,7 +3,8 @@
     "allow": [
       "WebFetch(domain:booknailedbydache.as.me)",
       "WebFetch(domain:jaedamoua.glossgenius.com)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(dir:*)"
     ]
   }
 }
