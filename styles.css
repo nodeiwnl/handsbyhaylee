@@ -695,7 +695,7 @@ p {
     flex-direction: column;
     align-items: center;
     gap: var(--spacing-sm);
-    color: var(--color-gold-primary);
+    color: var(--color-pink-primary);
     animation: scrollBounce 2s ease-in-out infinite;
     z-index: 10;
     transition: opacity var(--transition-base);
